@@ -5,10 +5,7 @@ An example implementation for adding copy/paste, multi-select, and inline editin
 ![screenshot](img/advanced-array.png)
 
 > [!WARNING]
-> This plugin is an **experiment** and not recommended for production use
-> There are known issues with virtualized lists and presence indicators
-> There may be issues with performance
-> It also uses an unstable Studio Configuration API
+> This plugin is an **experiment** and not recommended for production use. There are known issues with virtualized lists and presence indicators. There may be issues with performance. It also uses an unstable Studio Configuration API
 
 - [sanity-plugin-advanced-array](#sanity-plugin-advanced-array)
   - [Installation](#installation)
