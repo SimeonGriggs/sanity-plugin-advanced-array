@@ -1,8 +1,14 @@
 # sanity-plugin-advanced-array
 
-> This plugin is an early experiment and not yet ready for production use
+An example implementation for adding copy/paste, multi-select, and inline editing to array fields in Sanity Studio.
 
-Adds extra functionality to array fields in Sanity Studio.
+![screenshot](img/advanced-array.png)
+
+> [!WARNING]
+> This plugin is an **experiment** and not recommended for production use
+> There are known issues with virtualized lists and presence indicators
+> There may be issues with performance
+> It also uses an unstable Studio Configuration API
 
 - [sanity-plugin-advanced-array](#sanity-plugin-advanced-array)
   - [Installation](#installation)
@@ -34,17 +40,17 @@ Unstable support:
 
 ## Installation
 
-```sh
-npm install sanity-plugin-advanced-array
-```
+This plugin is not published to npm, you would need to install it from GitHub directly into your Studio
 
 ## Usage
 
 First, add it as a plugin in `sanity.config.ts`
 
 ```ts
+// ./sanity.config.ts
+
 import {defineConfig} from 'sanity'
-import {advancedArray} from 'sanity-plugin-advanced-array'
+import {advancedArray} from './src/plugins/advancedArray'
 
 export default defineConfig({
   // ...other config
